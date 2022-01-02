@@ -1,0 +1,122 @@
+    /* -----------------------------------------------Trainer Index  */
+    
+    #headerIndex {
+        background-color: aquamarine;
+        display: flex;
+        height: 300px;
+    }
+    
+    #blockLogoIndex {
+        background-color: rgba(0, 255, 234, 0.726);
+        width: 700px;
+        height: 250px;
+        margin-top: 20px;
+        margin-right: 200px;
+        margin-left: 20px;
+        border-radius: 100%;
+    }
+    
+    #logoIndex {
+        width: 700px;
+        height: 250px;
+        margin-top: 10px;
+        margin-right: 200px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        border-radius: 100%;
+    }
+    
+    #listInfo {
+        text-decoration: none;
+    }
+    
+    #profileTrainer {
+        margin-top: 40px;
+        display: flex;
+    }
+    
+    .searchCourse {
+        margin-top: 20px;
+        margin-left: 70%;
+    }
+    
+    .addCourse {
+        margin-top: 30px;
+        margin-left: 45px;
+    }
+    
+    #courseTitle {
+        text-align: center;
+        color: rgb(253, 154, 5);
+    }
+    
+    #listCourse {
+        margin-top: 30px;
+    }
+    
+    #addCourseForm {
+        width: 1000px;
+    }
+    /* ------------------------------------------------------------------------List trainee */
+    
+    .homeButton {
+        /* background-image: url(images/homeButton.png); */
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #traineeTitle {
+        margin-left: 40%;
+        margin-right: 42%;
+        /* color: rgb(255, 187, 0); */
+        background-color: rgba(20, 115, 238, 0.829);
+    }
+    
+    .TableTraineeDetail {
+        margin-top: 50px;
+        /* background-color: rgba(57, 231, 34, 0.685); */
+    }
+    
+    #searchTrainee {
+        margin-left: 70%;
+        margin-top: 20px;
+    }
+    
+    .inputGrade {
+        margin-top: 20px;
+    }
+    /* ------------------------------------------Grade Trainee */
+    /* #gradeBody {
+        background-image: url(images/backgroundGrade.jpg);
+    } */
+    
+    #addGradeButton {
+        margin-left: 25px;
+        /* background-color: rgba(7, 226, 7, 0.856); */
+    }
+    
+    .searchGrade {
+        margin-top: 20px;
+        margin-left: 1000px;
+        margin-bottom: 20px;
+    }
+    
+    #tableGrade {
+        width: 100%;
+        /* background-color: rgba(255, 166, 0, 0.767); */
+    }
+    
+    #menuGrade {
+        display: block;
+    }
+    
+    #titleGrade {
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        /* color: rgb(255, 136, 0); */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* background-color: rgba(0, 0, 255, 0.87); */
+    }
+    /* --------------------------------------------------------------manage Course-*/
