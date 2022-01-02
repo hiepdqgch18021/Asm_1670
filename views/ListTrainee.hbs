@@ -11,23 +11,29 @@
 </head>
 
 <body id="bodyTrainee">
-<div class="homeButton">
-    <form action="/">
-        <input type="submit" value="Home">
-    </form>
+<div id="headerTrainee">
+
+    <div class="">
+        <form action="/">
+            <input type="submit" value="Home" id="homeButton">
+        </form>
+    </div>
+
+    <div id="addTrainee">
+        <h5>Input Information Of Trainee</h5>
+        <form action="/ListTrainee" method="POST" class="add">
+            ID<input type="text" name="txtID">
+            <br>Name <input type="text" name="txtName">
+            <br> Gmail <input type="text" name="txtGmail">
+            <br> Age <input type="text" name="txtAge">
+            <br> Birthday <input type="text" name="txtBirthday">
+            <br><input type="submit" value="Add Trainee">
+            <br>
+        </form>
+    </div>
+    
+
 </div>
-    <form action="/ListTrainee" method="POST" class="add">
-        ID<input type="text" name="txtID">
-        <br>Name <input type="text" name="txtName">
-        <br> Gmail <input type="text" name="txtGmail">
-        <br> Age <input type="text" name="txtAge">
-        <br> Birthday <input type="text" name="txtBirthday">
-        <br><input type="submit" value="Add Trainee">
-        <br>
-    </form>
-
-<img src="images/logoGOU.jpg" alt="">
-
 <h1 id="traineeTitle">List Of Trainee</h1>
 
 <form action="/searchTrainee" method="POST" id="searchTrainee">

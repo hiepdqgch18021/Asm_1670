@@ -13,12 +13,13 @@
 <body id="gradeBody" >
 
 <div class="homeButton">
-    <form action="/trainer">
+    <form action="/">
     <input type="submit" value="home"  class="fa fa-home" aria-hidden="true">
     </form>
 </div>
-
-<form action="/trainer/addGrade" method="post" class="inputGrade" >
+<div id="addgrade">
+<h3>Input Information To Add Grade </h3>
+<form action="/addGrade" method="post" class="inputGrade" >
 Name Of Trainee: <input type="text" name="txtTraineeGrade">
 <br><br> 
 ID Of Trainee: <input type="text" name="txtTraineeId"><br><br>
@@ -30,10 +31,10 @@ Type Of Grade:
                 </select>
 <input type="submit" value="Add Grade" id="addGradeButton">
 </form>
-
+</div>
 <h1 id="titleGrade">GRADE TABLE</h1>
 
-<form action="/trainer/searchGrade" method="POST" class="searchGrade">
+<form action="/searchGrade" method="POST" class="searchGrade">
 Search Grade with trainee ID <input type="text" name="txtSearch">
 <input type="submit" value="search">
 </form>
@@ -53,8 +54,8 @@ Search Grade with trainee ID <input type="text" name="txtSearch">
         <td>{{CourseName}}</td>
         <td>{{TypeGrade}} </td>
         <td id="menuGrade">
-            <a href="/Trainer/editGrade?id={{_id}}"> Edit </a>
-            <a href="/Trainer/deleteGrade?id={{_id}}"> delete </a>
+            <a href="/editGrade?id={{_id}}"> Edit </a>
+            <a href="/deleteGrade?id={{_id}}"> delete </a>
         </td>
     </tr>
     {{/each}}

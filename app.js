@@ -91,7 +91,7 @@ app.post('/addGrade', async(req, res) => {
     const client = await MongoClient.connect(url);
     const dbo = client.db(DATABASE_NAME);
     await dbo.collection("listGrade").insertOne(newGrade);
-    res.redirect("/trainer/GradeTrainee");
+    res.redirect("/GradeTrainee");
 })
 
 app.post('/searchGrade', async(req, res) => {
@@ -108,7 +108,7 @@ app.get('/deleteGrade', async(req, res) => {
     const client = await MongoClient.connect(url);
     const dbo = client.db(DATABASE_NAME);
     await dbo.collection("listGrade").deleteOne({ "_id": ObjectId(id) });
-    res.redirect("/Trainer/GradeTrainee");
+    res.redirect("/GradeTrainee");
 });
 
 app.get('/editGrade', async(req, res) => {
@@ -130,8 +130,8 @@ app.post('/updateGrade', async(req, res) => {
     const filter = { _id: ObjectId(id) }
     const client = await MongoClient.connect(url);
     const dbo = client.db(DATABASE_NAME);
-    await dbo.collection("listGrade").updateOne(filter, { $set: { name: nameInput, TypeGrade: typeGrade } })
-    res.redirect("/Trainer/GradeTrainee");
+    await dbo.collection("listGrade").updateOne(filter, { $set: { TypeGrade: typeGrade } })
+    res.redirect("/GradeTrainee");
 })
 
 
@@ -150,6 +150,7 @@ app.post('/ListTrainee', async(req, res) => {
     await dbo.collection("listTrainee").insertOne(newTrainee);
     res.redirect("/ListTrainee");
 })
+
 app.get('/deleteTrainee', async(req, res) => {
     const id = req.query.id;
     var ObjectId = require('mongodb').ObjectId;

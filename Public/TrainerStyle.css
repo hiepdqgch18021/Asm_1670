@@ -59,11 +59,28 @@
     }
     /* ------------------------------------------------------------------------List trainee */
     
+    #headerTrainee {
+        display: flex;
+    }
+    
+    #addTrainee {
+        padding-top: 20px;
+        margin-left: 100px;
+    }
+    
+    #logoTrainee {
+        width: 850px;
+        height: 380px;
+        margin-left: 450px;
+    }
+    
     .homeButton {
         /* background-image: url(images/homeButton.png); */
         margin-top: 20px;
         margin-left: 20px;
         margin-bottom: 20px;
+        background-color: rgba(22, 223, 22, 0.808);
+        width: 50px;
     }
     
     #traineeTitle {
@@ -87,9 +104,10 @@
         margin-top: 20px;
     }
     /* ------------------------------------------Grade Trainee */
-    /* #gradeBody {
-        background-image: url(images/backgroundGrade.jpg);
-    } */
+    
+    #addgrade {
+        margin-left: 100px;
+    }
     
     #addGradeButton {
         margin-left: 25px;
